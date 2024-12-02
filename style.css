@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 25%;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fe617a;
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid rgb(160, 158, 158); /* Change color and thickness as needed */
+  margin: 0 1px; /* Space between line and text */
+}
+.option {
+  position: relative;
+  margin: 15px 0;
+  padding: 20px 20px 0 20px;
+  border: 1px solid #ddd;
+  accent-color: rgb(255, 34, 145);
+}
+
+.price {
+  display: flex;
+  justify-content: end;
+}
+.one-unit {
+  position: relative;
+}
+.stnd-price {
+  position: relative;
+  top: 20px;
+  left: -115px;
+  font-size: small;
+}
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.discount {
+  background-color: #fe617a;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.price {
+  position: relative;
+  top: -20px;
+  font-weight: bold;
+}
+
+.original-price {
+  position: relative;
+  right: 13px;
+  text-decoration: line-through;
+  color: #999;
+  font-size: smaller;
+}
+.cart-btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  background-color: #fe617a;
+  border: none;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+.option.active {
+  border: 2px solid #ff6b6b;
+  background-color: #fff9f9;
+  position: relative;
+}
+
+.option.popular::after {
+  content: "MOST POPULAR";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.detail-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.detail-row label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 50px;
+}
+select {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #fff9f7;
+  padding: 10px;
+  width: fit-content;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+span {
+  font-weight: bold;
+}
